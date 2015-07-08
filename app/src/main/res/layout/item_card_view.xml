@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    card_view:cardUseCompatPadding = "true"
+    card_view:cardCornerRadius="2dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/caratula_default"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image"
+                    android:contentDescription="@string/description_card" />
+
+
+                <TextView
+                                android:paddingLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="El señor de los anillos"
+                                android:textSize="16sp"
+                                android:id="@+id/name"
+                                android:textColor="@color/primary_dark"
+                                android:layout_gravity="center"
+                                android:layout_below="@+id/image"
+                                android:layout_alignLeft="@+id/image"
+                                android:layout_alignStart="@+id/image"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="No me acuerdo"
+                                android:textSize="16sp"
+                                android:id="@+id/director"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/name"
+                                android:layout_alignLeft="@+id/name"
+                                android:layout_alignStart="@+id/name"/>
+
+            </RelativeLayout>
+
+</android.support.v7.widget.CardView>
